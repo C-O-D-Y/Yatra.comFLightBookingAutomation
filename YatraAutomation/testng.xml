@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test thread-count="1" name="ChooseTest">
+		<classes>
+
+			<class name="com.atmecs.testScripts.ChooseFlight" />
+
+		</classes>
+	</test>
+
+	<test thread-count="1" name="SelectTest">
+		<classes>
+
+			<class name="com.atmecs.testScripts.SelectFlight" />
+
+		</classes>
+	</test>
+
+	<test thread-count="1" name="PassengersTest">
+
+		<classes>
+
+			<class name="com.atmecs.testScripts.TravellersDetails" />
+
+		</classes>
+	</test>
+</suite> 
