@@ -17,7 +17,7 @@ public class ProvideData {
 	// Constructor provide loading of the file
 	// parameters filepath
 	public ProvideData(String filepath, int sheetIndex) {
-		provider = new ExcelFileOperation(filepath,sheetIndex);
+		provider = new ExcelFileOperation(filepath, sheetIndex);
 	}
 
 	/**
@@ -45,7 +45,12 @@ public class ProvideData {
 			int j = 0;
 			while (iterator.hasNext()) {
 				Cell cell = iterator.next();
-				object[i][j] = cell.toString();
+				if (!cell.toString().equals(" "))
+
+				{
+					object[i][j] = cell.toString();
+					System.out.println(cell.toString());
+				}
 				j++;
 			}
 			i++;

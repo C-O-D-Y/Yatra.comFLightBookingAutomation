@@ -29,12 +29,13 @@ public class TravellersDetails extends TestBase {
 	@Test(priority = 6, dataProvider = "cityinput", dataProviderClass = TestDataProvider.class)
 	public void doPageFlow(String fromCity, String toCity) {
 		try {
-			logger=extent.startTest("Traveller details");
+			logger = extent.startTest("Traveller details");
 			System.out.println(fromCity);
 
-			HomePageFlow.cityInput( fromCity, toCity);
+			HomePageFlow.cityInput(fromCity, toCity);
+			CommonUtility.action();
 //			HomePageFlow.cityInput(driver,"BLR" ,"BOM");
-			
+
 		} catch (InterruptedException e) {
 			System.out.println("System Interrupted! please try again");
 		}
@@ -50,7 +51,7 @@ public class TravellersDetails extends TestBase {
 		log.info("selecting flights");
 		SelectFlightFlow.selectingFlights();
 		log.info("explicit Wait");
-		CommonUtility.explicitWait( YatraFlightBookingLocators.getLocators("loc.btn.payment"));
+		CommonUtility.explicitWait(YatraFlightBookingLocators.getLocators("loc.btn.payment"));
 		log.info("Validating the redirection of the web page");
 		review.isRedirectionCorrect();
 		log.info("Validating the Flight city name");
@@ -60,7 +61,7 @@ public class TravellersDetails extends TestBase {
 //Validating the flight details
 	@Test(priority = 8)
 	public void validateFlightDetails() {
-		
+
 		log.info("Validating the Duration of the flights");
 		duration.isFlightDurationCorrect();
 		log.info("Validating the timing of the flights");
@@ -87,8 +88,8 @@ public class TravellersDetails extends TestBase {
 	public void setPassengersData(String firstname, String lastname, String firstname1, String lastname1, String mob_no,
 			String email) {
 		try {
-			PassengersDetails.givePassengersDetails(driver,firstname, lastname, firstname1, lastname1, mob_no, email);
-		
+			PassengersDetails.givePassengersDetails(driver, firstname, lastname, firstname1, lastname1, mob_no, email);
+
 		} catch (InterruptedException e) {
 			System.out.println("System Interrupted! please try again");
 		}

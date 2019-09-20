@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 
 import com.atmecs.constants.FilePath;
@@ -76,18 +77,21 @@ public class ExtentReport {
 			logger.log(LogStatus.SKIP, "Test Case SKIPPED IS " + result.getName());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 			logger.log(LogStatus.PASS, "Test Case PASSED IS " + result.getName());
-
 		}
 		extent.endTest(logger);
 		System.out.println("logger executed");
+		
 	}
 
 //closing all the resources used for the testing
 	@AfterSuite
 	public void endReport() {
-		System.out.println("After test executed");
-		driver.quit();
 		extent.flush();
 		extent.close();
+	}
+	@AfterTest
+	public void print()
+	{
+		driver.close();
 	}
 }

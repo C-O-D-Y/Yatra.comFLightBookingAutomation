@@ -20,6 +20,7 @@ public class SelectFlight extends TestBase {
 		try {
 			logger=extent.startTest("Selecting flights");
 			HomePageFlow.cityInput( fromCity, toCity);
+			CommonUtility.action();
 		} catch (InterruptedException e) {
 			System.out.println("System Interrupted! please try again");
 		}

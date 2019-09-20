@@ -1,32 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-18T07:09:42Z" name="Suite" finished-at="2019-09-18T07:15:11Z" duration-ms="329204">
+  <suite started-at="2019-09-20T09:45:13Z" name="Suite" finished-at="2019-09-20T09:50:50Z" duration-ms="337554">
     <groups>
     </groups>
-    <test started-at="2019-09-18T07:09:42Z" name="ChooseTest" finished-at="2019-09-18T07:11:19Z" duration-ms="97298">
+    <test started-at="2019-09-20T09:45:13Z" name="ChooseTest" finished-at="2019-09-20T09:47:09Z" duration-ms="116242">
       <class name="com.atmecs.testScripts.ChooseFlight">
-        <test-method is-config="true" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:09:42Z" name="intitailizeBrowser" finished-at="2019-09-18T07:09:54Z" duration-ms="11758" status="PASS">
+        <test-method is-config="true" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:45:13Z" name="intitailizeBrowser" finished-at="2019-09-20T09:45:34Z" duration-ms="20765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intitailizeBrowser -->
-        <test-method signature="homePageRedirection()[pri:1, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:09:54Z" name="homePageRedirection" finished-at="2019-09-18T07:09:54Z" duration-ms="41" status="PASS">
+        <test-method signature="correctCityValidation(java.lang.String, java.lang.String)[pri:1, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:45:35Z" name="correctCityValidation" data-provider="wrongcityinput" finished-at="2019-09-20T09:46:01Z" duration-ms="25717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kolkata]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dcbdcdcb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- correctCityValidation -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:01Z" name="tearDown" finished-at="2019-09-20T09:46:01Z" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=correctCityValidation status=SUCCESS method=ChooseFlight.correctCityValidation(java.lang.String, java.lang.String)[pri:1, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="homePageRedirection()[pri:1, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:01Z" name="homePageRedirection" finished-at="2019-09-20T09:46:01Z" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageRedirection -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:09:54Z" name="tearDown" finished-at="2019-09-18T07:09:54Z" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:01Z" name="tearDown" finished-at="2019-09-20T09:46:01Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homePageRedirection status=SUCCESS method=ChooseFlight.homePageRedirection()[pri:1, instance:com.atmecs.testScripts.ChooseFlight@1534f01b] output={null}]]]>
+                <![CDATA[[TestResult name=homePageRedirection status=SUCCESS method=ChooseFlight.homePageRedirection()[pri:1, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:09:55Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-18T07:10:11Z" duration-ms="15696" status="PASS">
+        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:01Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-20T09:46:19Z" duration-ms="18011" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,34 +69,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageCityInput -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:11Z" name="tearDown" finished-at="2019-09-18T07:10:11Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:19Z" name="tearDown" finished-at="2019-09-20T09:46:19Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b] output={null}]]]>
+                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:11Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-18T07:10:26Z" duration-ms="15337" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chennai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mumbai]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageCityInput -->
-        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:26Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-18T07:10:41Z" duration-ms="15318" status="PASS">
+        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:19Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-20T09:46:38Z" duration-ms="19588" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,56 +96,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageCityInput -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:26Z" name="tearDown" finished-at="2019-09-18T07:10:26Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:38Z" name="tearDown" finished-at="2019-09-20T09:46:38Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b] output={null}]]]>
+                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:41Z" name="tearDown" finished-at="2019-09-18T07:10:41Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:41Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-18T07:10:57Z" duration-ms="15275" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mumbai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[delhi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageCityInput -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:57Z" name="tearDown" finished-at="2019-09-18T07:10:57Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:10:57Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-18T07:11:12Z" duration-ms="15461" status="PASS">
+        <test-method signature="homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:38Z" name="homePageCityInput" data-provider="cityinput" finished-at="2019-09-20T09:46:56Z" duration-ms="17638" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,41 +123,45 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePageCityInput -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:11:12Z" name="tearDown" finished-at="2019-09-18T07:11:12Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@1534f01b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="isHomeDataCorrect()[pri:3, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:11:12Z" name="isHomeDataCorrect" finished-at="2019-09-18T07:11:19Z" duration-ms="7244" status="PASS">
+        <test-method signature="isHomeDataCorrect()[pri:3, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:56Z" name="isHomeDataCorrect" finished-at="2019-09-20T09:47:04Z" duration-ms="8336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isHomeDataCorrect -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@1534f01b]" started-at="2019-09-18T07:11:19Z" name="tearDown" finished-at="2019-09-18T07:11:19Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:46:56Z" name="tearDown" finished-at="2019-09-20T09:46:56Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=isHomeDataCorrect status=SUCCESS method=ChooseFlight.isHomeDataCorrect()[pri:3, instance:com.atmecs.testScripts.ChooseFlight@1534f01b] output={null}]]]>
+                <![CDATA[[TestResult name=homePageCityInput status=SUCCESS method=ChooseFlight.homePageCityInput(java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:47:04Z" name="tearDown" finished-at="2019-09-20T09:47:04Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=isHomeDataCorrect status=SUCCESS method=ChooseFlight.isHomeDataCorrect()[pri:3, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="print()[pri:0, instance:com.atmecs.testScripts.ChooseFlight@363ee3a2]" started-at="2019-09-20T09:47:04Z" name="print" finished-at="2019-09-20T09:47:09Z" duration-ms="4761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
       </class> <!-- com.atmecs.testScripts.ChooseFlight -->
     </test> <!-- ChooseTest -->
-    <test started-at="2019-09-18T07:11:19Z" name="SelectTest" finished-at="2019-09-18T07:13:00Z" duration-ms="100267">
+    <test started-at="2019-09-20T09:47:10Z" name="SelectTest" finished-at="2019-09-20T09:48:44Z" duration-ms="94630">
       <class name="com.atmecs.testScripts.SelectFlight">
-        <test-method is-config="true" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:11:19Z" name="intitailizeBrowser" finished-at="2019-09-18T07:11:32Z" duration-ms="12083" status="PASS">
+        <test-method is-config="true" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:47:10Z" name="intitailizeBrowser" finished-at="2019-09-20T09:47:33Z" duration-ms="23896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intitailizeBrowser -->
-        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:11:32Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-18T07:11:47Z" duration-ms="15558" status="PASS">
+        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:47:34Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-20T09:47:52Z" duration-ms="18145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,45 +177,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doHomePageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:11:47Z" name="tearDown" finished-at="2019-09-18T07:11:47Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:47:52Z" name="tearDown" finished-at="2019-09-20T09:47:52Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3] output={null}]]]>
+                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@70e8f8e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:11:47Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-18T07:12:02Z" duration-ms="15266" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chennai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mumbai]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doHomePageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:02Z" name="tearDown" finished-at="2019-09-18T07:12:02Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:02Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-18T07:12:18Z" duration-ms="15187" status="PASS">
+        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:47:52Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-20T09:48:10Z" duration-ms="17983" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -254,45 +204,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doHomePageFlow -->
-        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:18Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-18T07:12:33Z" duration-ms="15229" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:48:10Z" name="tearDown" finished-at="2019-09-20T09:48:10Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[mumbai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[delhi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doHomePageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:18Z" name="tearDown" finished-at="2019-09-18T07:12:18Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3] output={null}]]]>
+                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@70e8f8e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:33Z" name="tearDown" finished-at="2019-09-18T07:12:33Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:33Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-18T07:12:48Z" duration-ms="15238" status="PASS">
+        <test-method signature="doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:48:10Z" name="doHomePageFlow" data-provider="cityinput" finished-at="2019-09-20T09:48:28Z" duration-ms="17889" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -308,45 +231,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doHomePageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:48Z" name="tearDown" finished-at="2019-09-18T07:12:48Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:48:28Z" name="tearDown" finished-at="2019-09-20T09:48:28Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@3e92efc3] output={null}]]]>
+                <![CDATA[[TestResult name=doHomePageFlow status=SUCCESS method=SelectFlight.doHomePageFlow(java.lang.String, java.lang.String)[pri:4, instance:com.atmecs.testScripts.SelectFlight@70e8f8e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="checkSortingButtonFunctionality()[pri:5, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:12:48Z" name="checkSortingButtonFunctionality" finished-at="2019-09-18T07:13:00Z" duration-ms="11633" status="PASS">
+        <test-method signature="checkSortingButtonFunctionality()[pri:5, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:48:28Z" name="checkSortingButtonFunctionality" finished-at="2019-09-20T09:48:40Z" duration-ms="12103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkSortingButtonFunctionality -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@3e92efc3]" started-at="2019-09-18T07:13:00Z" name="tearDown" finished-at="2019-09-18T07:13:00Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:48:40Z" name="tearDown" finished-at="2019-09-20T09:48:40Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkSortingButtonFunctionality status=SUCCESS method=SelectFlight.checkSortingButtonFunctionality()[pri:5, instance:com.atmecs.testScripts.SelectFlight@3e92efc3] output={null}]]]>
+                <![CDATA[[TestResult name=checkSortingButtonFunctionality status=SUCCESS method=SelectFlight.checkSortingButtonFunctionality()[pri:5, instance:com.atmecs.testScripts.SelectFlight@70e8f8e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="print()[pri:0, instance:com.atmecs.testScripts.SelectFlight@70e8f8e]" started-at="2019-09-20T09:48:40Z" name="print" finished-at="2019-09-20T09:48:44Z" duration-ms="4554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
       </class> <!-- com.atmecs.testScripts.SelectFlight -->
     </test> <!-- SelectTest -->
-    <test started-at="2019-09-18T07:13:00Z" name="PassengersTest" finished-at="2019-09-18T07:15:11Z" duration-ms="131441">
+    <test started-at="2019-09-20T09:48:44Z" name="PassengersTest" finished-at="2019-09-20T09:50:50Z" duration-ms="126021">
       <class name="com.atmecs.testScripts.TravellersDetails">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:09:42Z" name="startReport" finished-at="2019-09-18T07:09:42Z" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:45:13Z" name="startReport" finished-at="2019-09-20T09:45:13Z" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:13:00Z" name="intitailizeBrowser" finished-at="2019-09-18T07:13:13Z" duration-ms="13435" status="PASS">
+        <test-method is-config="true" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:48:44Z" name="intitailizeBrowser" finished-at="2019-09-20T09:49:03Z" duration-ms="18914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intitailizeBrowser -->
-        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:13:13Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-18T07:13:29Z" duration-ms="15611" status="PASS">
+        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:49:03Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-20T09:49:23Z" duration-ms="19310" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -362,45 +289,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doPageFlow -->
-        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:13:29Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-18T07:13:44Z" duration-ms="15258" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:49:23Z" name="tearDown" finished-at="2019-09-20T09:49:23Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chennai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[mumbai]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doPageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:13:29Z" name="tearDown" finished-at="2019-09-18T07:13:29Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
+                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:13:44Z" name="tearDown" finished-at="2019-09-18T07:13:44Z" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:13:44Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-18T07:14:00Z" duration-ms="15288" status="PASS">
+        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:49:23Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-20T09:49:41Z" duration-ms="17974" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -416,45 +316,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doPageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:00Z" name="tearDown" finished-at="2019-09-18T07:14:00Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:49:41Z" name="tearDown" finished-at="2019-09-20T09:49:41Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
+                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:00Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-18T07:14:15Z" duration-ms="15216" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mumbai]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[delhi]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doPageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:15Z" name="tearDown" finished-at="2019-09-18T07:14:15Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:15Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-18T07:14:30Z" duration-ms="15345" status="PASS">
+        <test-method signature="doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:49:41Z" name="doPageFlow" data-provider="cityinput" finished-at="2019-09-20T09:49:59Z" duration-ms="18929" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -470,63 +343,63 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doPageFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:30Z" name="tearDown" finished-at="2019-09-18T07:14:30Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:49:59Z" name="tearDown" finished-at="2019-09-20T09:49:59Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
+                <![CDATA[[TestResult name=doPageFlow status=SUCCESS method=TravellersDetails.doPageFlow(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="reviewBookingDetails()[pri:7, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:30Z" name="reviewBookingDetails" finished-at="2019-09-18T07:14:46Z" duration-ms="15552" status="PASS">
+        <test-method signature="reviewBookingDetails()[pri:7, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:49:59Z" name="reviewBookingDetails" finished-at="2019-09-20T09:50:20Z" duration-ms="20422" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reviewBookingDetails -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:46Z" name="tearDown" finished-at="2019-09-18T07:14:46Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:20Z" name="tearDown" finished-at="2019-09-20T09:50:20Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=reviewBookingDetails status=SUCCESS method=TravellersDetails.reviewBookingDetails()[pri:7, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
+                <![CDATA[[TestResult name=reviewBookingDetails status=SUCCESS method=TravellersDetails.reviewBookingDetails()[pri:7, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="validateFlightDetails()[pri:8, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:46Z" name="validateFlightDetails" finished-at="2019-09-18T07:14:46Z" duration-ms="523" status="PASS">
+        <test-method signature="validateFlightDetails()[pri:8, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:20Z" name="validateFlightDetails" finished-at="2019-09-20T09:50:21Z" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateFlightDetails -->
-        <test-method signature="checkFunctionalyInputBoxes()[pri:9, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:46Z" name="checkFunctionalyInputBoxes" finished-at="2019-09-18T07:14:52Z" duration-ms="6044" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:21Z" name="tearDown" finished-at="2019-09-20T09:50:21Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateFlightDetails status=SUCCESS method=TravellersDetails.validateFlightDetails()[pri:8, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="checkFunctionalyInputBoxes()[pri:9, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:21Z" name="checkFunctionalyInputBoxes" finished-at="2019-09-20T09:50:27Z" duration-ms="6174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFunctionalyInputBoxes -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:46Z" name="tearDown" finished-at="2019-09-18T07:14:46Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:27Z" name="tearDown" finished-at="2019-09-20T09:50:27Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateFlightDetails status=SUCCESS method=TravellersDetails.validateFlightDetails()[pri:8, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
+                <![CDATA[[TestResult name=checkFunctionalyInputBoxes status=SUCCESS method=TravellersDetails.checkFunctionalyInputBoxes()[pri:9, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:52Z" name="tearDown" finished-at="2019-09-18T07:14:52Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkFunctionalyInputBoxes status=SUCCESS method=TravellersDetails.checkFunctionalyInputBoxes()[pri:9, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="setPassengersData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:14:52Z" name="setPassengersData" data-provider="testinput" finished-at="2019-09-18T07:15:11Z" duration-ms="19044" status="PASS">
+        <test-method signature="setPassengersData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:27Z" name="setPassengersData" data-provider="testinput" finished-at="2019-09-20T09:50:46Z" duration-ms="19004" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -562,18 +435,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setPassengersData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:15:11Z" name="tearDown" finished-at="2019-09-18T07:15:11Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:46Z" name="tearDown" finished-at="2019-09-20T09:50:46Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=setPassengersData status=SUCCESS method=TravellersDetails.setPassengersData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:com.atmecs.testScripts.TravellersDetails@30ee2816] output={null}]]]>
+                <![CDATA[[TestResult name=setPassengersData status=SUCCESS method=TravellersDetails.setPassengersData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:10, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.atmecs.testScripts.TravellersDetails@30ee2816]" started-at="2019-09-18T07:15:11Z" name="endReport" finished-at="2019-09-18T07:15:14Z" duration-ms="2689" status="PASS">
+        <test-method is-config="true" signature="print()[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:46Z" name="print" finished-at="2019-09-20T09:50:50Z" duration-ms="4168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- print -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.atmecs.testScripts.TravellersDetails@635eaaf1]" started-at="2019-09-20T09:50:50Z" name="endReport" finished-at="2019-09-20T09:50:51Z" duration-ms="1006" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

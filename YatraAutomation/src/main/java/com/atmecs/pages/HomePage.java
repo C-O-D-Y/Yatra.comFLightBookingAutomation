@@ -8,12 +8,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.atmecs.constants.ValidatingData;
 import com.atmecs.constants.YatraFlightBookingLocators;
 import com.atmecs.helpers.CommonUtility;
 
 //in this class, validation of different functionality is validated of the homepage of yatra.com flight bookings
 
 public class HomePage {
+	ValidatingData data = new ValidatingData();
 	YatraFlightBookingLocators locaters = new YatraFlightBookingLocators();
 
 	/**
@@ -22,7 +24,7 @@ public class HomePage {
 	 * 
 	 * @param driver
 	 */
-	public void isRedirectionCorrect(WebDriver driver) {
+	public void isRedirectionCorrect() {
 
 		String title = CommonUtility.getTitle();
 		Assert.assertEquals(title, "Flight, Cheap Air Tickets , Hotels, Holiday, Trains Package Booking - Yatra.com",
@@ -36,10 +38,10 @@ public class HomePage {
 	 * 
 	 * @param driver
 	 */
-	public boolean isButtonDisplayed(WebDriver driver) {
+	public boolean isButtonDisplayed() {
 		BasicConfigurator.configure();
 		boolean status = false;
-		status = CommonUtility.isElementVisible( YatraFlightBookingLocators.getLocators("loc.btn.returnDate"));
+		status = CommonUtility.isElementVisible(YatraFlightBookingLocators.getLocators("loc.btn.returnDate"));
 		Assert.assertEquals(status, true, "Round button is not working properly");
 		System.out.println("Round button is working properly");
 		return status;
@@ -55,11 +57,21 @@ public class HomePage {
 	 */
 	public List<String> changesInElement(WebDriver driver) {
 		List<String> stringelement = new ArrayList<String>();
-		List<WebElement> element = CommonUtility.getElementsList(
-				YatraFlightBookingLocators.getLocators("loc.cityNames.form"));
+		List<WebElement> element = CommonUtility
+				.getElementsList(YatraFlightBookingLocators.getLocators("loc.cityNames.form"));
 		for (WebElement webelement : element) {
 			stringelement.add(webelement.getText());
 		}
 		return stringelement;
+	}
+
+	public String isMessageDisplayed() {
+		System.out.println("FAFA");
+		WebElement element = CommonUtility.getElement(YatraFlightBookingLocators.getLocators("loc.errorMsg.cityInput"));
+		String message = element.getText();
+		Assert.assertEquals(message, ValidatingData.getValidatingData("homepage_message"),
+				"wrong city input functionality is NOT correct");
+		System.out.println("wrong city input functionality IS CORRECT");
+		return message;
 	}
 }

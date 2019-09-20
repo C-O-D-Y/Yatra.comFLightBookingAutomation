@@ -1,5 +1,4 @@
 C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\constants\ValidatingData.java
-C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\dataProvider\CityDataProvider.java
 C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\logReports\LogReport.java
 C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\constants\GridConnection.java
 C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\pages\HomePage.java
@@ -22,3 +21,4 @@ C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atm
 C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\extentReports\ExtentReport.java
 C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\pages\ReviewBookings.java
 C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\testflow\SelectFlightFlow.java
+C:\Users\saurabh.chauhan\eclipse-workspace\YatraAutomation\src\main\java\com\atmecs\constants\LoadPropertyFile.java

@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="5" name="PassengersTest(failed)" verbose="0">
+  <test thread-count="5" name="ChooseTest(failed)" verbose="0">
     <classes>
-      <class name="com.atmecs.testScripts.TravellersDetails">
+      <class name="com.atmecs.testScripts.ChooseFlight">
         <methods>
-          <include name="setPassengersData" invocation-numbers="0"/>
+          <include name="homePageCityInput"/>
+          <include name="isHomeDataCorrect"/>
+          <include name="correctCityValidation"/>
+          <include name="homePageRedirection"/>
+          <include name="print"/>
           <include name="endReport"/>
           <include name="tearDown"/>
           <include name="startReport"/>
           <include name="intitailizeBrowser"/>
         </methods>
-      </class> <!-- com.atmecs.testScripts.TravellersDetails -->
+      </class> <!-- com.atmecs.testScripts.ChooseFlight -->
     </classes>
-  </test> <!-- PassengersTest(failed) -->
+  </test> <!-- ChooseTest(failed) -->
+  <test thread-count="5" name="SelectTest(failed)" verbose="0">
+    <classes>
+      <class name="com.atmecs.testScripts.SelectFlight">
+        <methods>
+          <include name="print"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="checkSortingButtonFunctionality"/>
+          <include name="startReport"/>
+          <include name="intitailizeBrowser"/>
+        </methods>
+      </class> <!-- com.atmecs.testScripts.SelectFlight -->
+    </classes>
+  </test> <!-- SelectTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

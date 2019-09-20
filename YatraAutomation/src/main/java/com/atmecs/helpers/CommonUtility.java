@@ -172,6 +172,11 @@ public class CommonUtility extends TestBase{
 	 * @param Webdriver
 	 */
 	public static void action() {
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			System.out.println("System interrupted");
+		}
 		Actions action = new Actions(driver);
 		action.sendKeys(Keys.ENTER).build().perform();
 	}

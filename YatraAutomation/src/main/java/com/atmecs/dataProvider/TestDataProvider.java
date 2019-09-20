@@ -27,8 +27,15 @@ public class TestDataProvider {
 	 */
 
 	@DataProvider(name = "testinput")
-	public Object[][] getData() {
+	public Object[][] getTestData() {
 		ProvideData provideData = new ProvideData(FilePath.TESTDATA_FILE, 1);
+		Object[][] getData = provideData.provideExcelData();
+		return getData;
+	}
+	
+	@DataProvider(name = "wrongcityinput")
+	public Object[][] getWrongCityData() {
+		ProvideData provideData = new ProvideData(FilePath.TESTDATA_FILE, 2);
 		Object[][] getData = provideData.provideExcelData();
 		return getData;
 	}

@@ -18,17 +18,15 @@ public class HomePageFlow {
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.btn.roundTrip"));
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.inputbox.departFrom"));
 		CommonUtility.isDisplayed( YatraFlightBookingLocators.getLocators("loc.selectArrivalCity.txt"));
-		CommonUtility.clickAndSendText( YatraFlightBookingLocators.getLocators("loc.inputbox.departFrom"), 5,
+		CommonUtility.clickAndSendText( YatraFlightBookingLocators.getLocators("loc.inputbox.departFrom"), 2,
 				fromCity);
-		Thread.sleep(1000);
+		
 		CommonUtility.action();
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.inputbox.goingTo"));
 		CommonUtility.isDisplayed( YatraFlightBookingLocators.getLocators("loc.selectDepartCity.txt"));
 
 		CommonUtility.clickAndSendText( YatraFlightBookingLocators.getLocators("loc.inputbox.goingTo"), 2,
 				toCity);
-		Thread.sleep(1000);
-		CommonUtility.action();
 	}
 
 	/**
@@ -37,7 +35,6 @@ public class HomePageFlow {
 	public static void dateInput() {
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.btn.departureDate"));
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.btn.departureDateOption"));
-		// return wala validation
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.btn.returnDate"));
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.btn.returnDateOption"));
 		CommonUtility.clickElement( YatraFlightBookingLocators.getLocators("loc.btn.travellerClass"));
